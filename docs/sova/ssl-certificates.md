@@ -1,6 +1,6 @@
 ---
 title: SSL Certificates
-parent: Backend
+parent: Sova (Backend)
 nav_order: 4
 ---
 

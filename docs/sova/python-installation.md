@@ -1,6 +1,6 @@
 ---
 title: Python Installation
-parent: Backend
+parent: Sova (Backend)
 nav_order: 2
 ---
 

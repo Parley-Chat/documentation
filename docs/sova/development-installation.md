@@ -1,6 +1,6 @@
 ---
 title: Development Installation
-parent: Backend
+parent: Sova (Backend)
 nav_order: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Sova (Backend)
 nav_order: 2
-has_children: true
 ---
 
 # Sova (Backend) Documentation
