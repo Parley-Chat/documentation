@@ -9,12 +9,12 @@ Welcome to the Parley Chat documentation. Parley Chat is a modern chat applicati
 
 ## Quick Navigation
 
-### [Backend](backend/)
+### [Sova (Backend)](sova/)
 Complete backend setup and development documentation:
-- [Server Installation](server-installation.md) - Production deployment with Docker
-- [Python Installation](python-installation.md) - Install Python 3.13 and dependencies
-- [Development Installation](development-installation.md) - Set up development environment
-- [SSL Certificates](ssl-certificates.md) - SSL setup with automatic renewal
+- [Server Installation](sova/server-installation.md) - Production deployment with Docker
+- [Python Installation](sova/python-installation.md) - Install Python 3.13 and dependencies
+- [Development Installation](sova/development-installation.md) - Set up development environment
+- [SSL Certificates](sova/ssl-certificates.md) - SSL setup with automatic renewal
 
 ## Project Links
 
