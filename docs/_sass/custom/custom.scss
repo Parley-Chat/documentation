@@ -1,0 +1,44 @@
+/* General */
+#site-nav {
+  padding: 1rem 0px;
+}
+.side-bar {
+  width: 16.5rem;
+  max-width: unset;
+}
+.site-title {
+  padding: 10px;
+}
+#top {
+  max-width: unset;
+  margin-left: 16.5rem;
+  margin-right: 0px;
+}
+
+/* Tables */
+.table-wrapper {
+  width: fit-content;
+}
+table {
+  min-width: 20%;
+  border-collapse: collapse;
+}
+td {
+  background-color: #34313a;
+}
+
+/* Callouts */
+p.note, blockquote.note {
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .side-bar {
+    width: unset;
+  }
+  #top {
+    margin-left: 0px;
+  }
+}

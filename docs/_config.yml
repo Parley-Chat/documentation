@@ -1,0 +1,31 @@
+title: Parley Docs
+description: Documentation for Parley.
+
+url: "https://parley-chat.github.io"
+baseurl: "/documentation"
+permalink: pretty
+
+theme: just-the-docs
+color_scheme: dark
+heading_anchors: true
+
+callouts:
+  note:
+    title: Note
+    color: blue
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      has_toc: false
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-sitemap
+
+relative_links:
+  enabled: true
+  collections: true
