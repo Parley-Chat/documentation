@@ -43,6 +43,12 @@ p.note, blockquote.note {
   gap: 0.5rem;
   z-index: 1000;
 }
+
+@media (max-width: 1200px) {
+  .header-icons {
+    top: 4rem;
+  }
+}
 .header-icon {
   width: 24px !important;
   height: 24px !important;
@@ -56,9 +62,17 @@ p.note, blockquote.note {
   opacity: 1;
 }
 .github-icon {
-  fill: var(--body-text-color);
+  fill: #ffffff;
   width: 24px !important;
   height: 24px !important;
+}
+
+.dark .github-icon {
+  fill: #ffffff;
+}
+
+.light .github-icon {
+  fill: #000000;
 }
 .theme-toggle {
   background: none;
@@ -69,7 +83,15 @@ p.note, blockquote.note {
 .theme-icon {
   width: 24px !important;
   height: 24px !important;
-  fill: var(--body-text-color);
+  fill: #ffffff;
+}
+
+.dark .theme-icon {
+  fill: #ffffff;
+}
+
+.light .theme-icon {
+  fill: #000000;
 }
 
 /* Mobile */

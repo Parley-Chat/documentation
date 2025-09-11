@@ -17,10 +17,18 @@
 
 <script>
 function toggleTheme() {
-  const currentTheme = document.documentElement.getAttribute('data-color-mode') || 'dark';
+  const body = document.body;
+  const currentTheme = body.classList.contains('light') ? 'light' : 'dark';
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
+  // Remove existing theme classes
+  body.classList.remove('light', 'dark');
+
+  // Apply new theme
+  body.classList.add(newTheme);
+  body.setAttribute('data-color-mode', newTheme);
   document.documentElement.setAttribute('data-color-mode', newTheme);
+
   localStorage.setItem('theme', newTheme);
 
   const sunIcon = document.querySelector('.sun-icon');
@@ -38,6 +46,12 @@ function toggleTheme() {
 // Initialize theme on page load
 document.addEventListener('DOMContentLoaded', function() {
   const savedTheme = localStorage.getItem('theme') || 'dark';
+  const body = document.body;
+
+  // Apply saved theme
+  body.classList.remove('light', 'dark');
+  body.classList.add(savedTheme);
+  body.setAttribute('data-color-mode', savedTheme);
   document.documentElement.setAttribute('data-color-mode', savedTheme);
 
   const sunIcon = document.querySelector('.sun-icon');
