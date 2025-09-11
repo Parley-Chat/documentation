@@ -1,4 +1,4 @@
-title: Parley Docs
+title: Parley Chat Docs
 description: Documentation for Parley.
 
 url: "https://parley-chat.github.io"
@@ -7,6 +7,9 @@ permalink: pretty
 
 theme: just-the-docs
 color_scheme: dark
+
+# Enable color mode switching
+color_scheme_supports_light_dark: true
 heading_anchors: true
 
 callouts:
