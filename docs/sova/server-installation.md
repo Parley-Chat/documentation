@@ -19,7 +19,19 @@ For development installation, use [Development Installation](development-install
 
 ## Installation Steps
 
-### 1. Install Docker
+### 1. Create a directory for Parley Chat
+
+```sh
+mkdir Parley-Chat
+```
+
+### 2. Navigate to Parley Chat directory
+
+```sh
+cd Parley-Chat
+```
+
+### 3. Install Docker
 
 On Ubuntu:
 
@@ -30,19 +42,19 @@ curl -sSL https://get.docker.com/ | CHANNEL=stable bash
 {: .note }
 In restricted networks, use http_proxy and https_proxy environment variables to install docker
 
-### 2. Clone the Repository
+### 4. Clone the Repository
 
 ```sh
-git clone https://github.com/Parley-Chat/Parley-Chat
+git clone https://github.com/Parley-Chat/Sova
 ```
 
-### 3. Navigate to Backend Directory
+### 5. Navigate to Sova (Backend) Directory
 
 ```sh
-cd Parley-Chat/Backend
+cd Sova
 ```
 
-### 4. Create Configuration File
+### 6. Create Configuration File
 
 Create an empty `config.toml` file (required for Docker to mount it as a file):
 
@@ -56,7 +68,7 @@ touch config.toml
 type nul > config.toml
 ```
 
-### 5. Generate Configuration
+### 7. Generate Configuration
 
 Run Parley Chat backend to create a config file:
 
@@ -64,7 +76,7 @@ Run Parley Chat backend to create a config file:
 docker compose run --build --rm app
 ```
 
-### 6. Configure the Backend
+### 8. Configure the Backend
 
 Open `config.toml` with an editor to configure the Backend:
 
@@ -75,7 +87,7 @@ nano config.toml
 {: .note }
 Some changes may require you to edit `docker-compose.yml` and `nginx.conf` too, like changing webserver port and URI Prefix
 
-### 7. SSL Certificates
+### 9. SSL Certificates
 
 {: .note }
 SSL certificates are **required** for production use. HTTP is unsupported due to WebCrypto API requirements.
@@ -86,7 +98,7 @@ Place your SSL certificates in the `certs` directory:
 
 For detailed instructions on obtaining and configuring SSL certificates, including automatic setup with Let's Encrypt and certbot, see [SSL Certificates](ssl-certificates.md).
 
-### 8. Deploy
+### 10. Deploy
 
 Start the services:
 

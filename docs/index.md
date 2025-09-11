@@ -11,11 +11,14 @@ Welcome to the Parley Chat documentation. Parley Chat is a modern chat applicati
 
 ### [Backend](backend/)
 Complete backend setup and development documentation:
-- [Server Installation](backend/server-installation.md) - Production deployment with Docker
-- [Python Installation](backend/python-installation.md) - Install Python 3.13 and dependencies
-- [Development Installation](backend/development-installation.md) - Set up development environment
-- [SSL Certificates](backend/ssl-certificates.md) - SSL setup with automatic renewal
+- [Server Installation](server-installation.md) - Production deployment with Docker
+- [Python Installation](python-installation.md) - Install Python 3.13 and dependencies
+- [Development Installation](development-installation.md) - Set up development environment
+- [SSL Certificates](ssl-certificates.md) - SSL setup with automatic renewal
 
 ## Project Links
 
-- [GitHub Repository](https://github.com/Parley-Chat/Parley-Chat)
+- [GitHub Organization](https://github.com/Parley-Chat)
+- [Backend GitHub Repository](https://github.com/Parley-Chat/sova)
+- [Frontend GitHub Repository](https://github.com/Parley-Chat/mura)
+- [Documentation GitHub Repository](https://github.com/Parley-Chat/documentation)

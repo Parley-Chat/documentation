@@ -1,12 +1,12 @@
 ---
-title: Backend
+title: Sova (Backend)
 nav_order: 2
 has_children: true
 ---
 
-# Backend Documentation
+# Sova (Backend) Documentation
 
-This section covers everything needed to set up and run the Parley Chat backend server.
+This section covers everything needed to set up and run the Parley Chat Sova (Backend) server.
 
 ## Installation Options
 
