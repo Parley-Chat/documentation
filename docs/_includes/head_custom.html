@@ -1,47 +1,37 @@
 
 <script>
 function toggleTheme() {
-  const body = document.body;
-  const currentTheme = body.classList.contains('light') ? 'light' : 'dark';
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-  body.classList.remove('light', 'dark');
-  body.classList.add(newTheme);
-  body.setAttribute('data-color-mode', newTheme);
-  document.documentElement.setAttribute('data-color-mode', newTheme);
-
+  document.documentElement.setAttribute('data-theme', newTheme);
   localStorage.setItem('theme', newTheme);
 
   const sunIcon = document.querySelector('.sun-icon');
   const moonIcon = document.querySelector('.moon-icon');
 
   if (newTheme === 'light') {
-    sunIcon.style.display = 'block';
-    moonIcon.style.display = 'none';
-  } else {
     sunIcon.style.display = 'none';
     moonIcon.style.display = 'block';
+  } else {
+    sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
   }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const savedTheme = localStorage.getItem('theme') || 'dark';
-  const body = document.body;
-
-  body.classList.remove('light', 'dark');
-  body.classList.add(savedTheme);
-  body.setAttribute('data-color-mode', savedTheme);
-  document.documentElement.setAttribute('data-color-mode', savedTheme);
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
 
   const sunIcon = document.querySelector('.sun-icon');
   const moonIcon = document.querySelector('.moon-icon');
 
   if (savedTheme === 'light') {
-    sunIcon.style.display = 'block';
-    moonIcon.style.display = 'none';
-  } else {
     sunIcon.style.display = 'none';
     moonIcon.style.display = 'block';
+  } else {
+    sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
   }
 });
 </script>

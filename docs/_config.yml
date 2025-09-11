@@ -6,10 +6,7 @@ baseurl: "/documentation"
 permalink: pretty
 
 theme: just-the-docs
-color_scheme: dark
-
-# Enable color mode switching
-color_scheme_supports_light_dark: true
+color_scheme: nil
 heading_anchors: true
 
 callouts:

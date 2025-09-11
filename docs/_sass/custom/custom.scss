@@ -1,3 +1,92 @@
+/* Theme Variables */
+:root {
+  --body-background-color: #fefefe;
+  --sidebar-color: #f5f6fa;
+  --border-color: #eeebee;
+  --body-text-color: #5c5962;
+  --body-heading-color: #5c5962;
+  --nav-child-link-color: #5c5962;
+  --link-color: #0366d6;
+  --btn-primary-color: #0366d6;
+  --base-button-color: #f7f7f7;
+  --code-background-color: #f5f6fa;
+  --search-background-color: #fefefe;
+  --table-background-color: #fefefe;
+  --feedback-color: #fefefe;
+}
+
+[data-theme="dark"] {
+  --body-background-color: #202020;
+  --sidebar-color: #2d2d30;
+  --border-color: #3f3f3f;
+  --body-text-color: #eeebee;
+  --body-heading-color: #ffffff;
+  --nav-child-link-color: #eeebee;
+  --link-color: #7253ed;
+  --btn-primary-color: #7253ed;
+  --base-button-color: #3f3f3f;
+  --code-background-color: #2d2d30;
+  --search-background-color: #2d2d30;
+  --table-background-color: #2d2d30;
+  --feedback-color: #2d2d30;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--body-background-color);
+  color: var(--body-text-color);
+}
+
+.side-bar {
+  background-color: var(--sidebar-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.main {
+  background-color: var(--body-background-color);
+}
+
+.search-input {
+  background-color: var(--search-background-color);
+  border: 1px solid var(--border-color);
+  color: var(--body-text-color);
+}
+
+.navigation, .navigation-list {
+  background-color: var(--sidebar-color);
+}
+
+.navigation-list-item .navigation-list-link {
+  color: var(--nav-child-link-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--body-heading-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-color);
+  border: 1px solid var(--btn-primary-color);
+}
+
+code {
+  background-color: var(--code-background-color);
+  color: var(--body-text-color);
+}
+
+table {
+  background-color: var(--table-background-color);
+}
+
+td {
+  background-color: var(--table-background-color);
+  border: 1px solid var(--border-color);
+}
+
 /* General */
 #site-nav {
   padding: 1rem 0px;
