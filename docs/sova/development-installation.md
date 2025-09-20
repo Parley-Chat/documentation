@@ -81,7 +81,7 @@ Replace python3.13 with python if you're on Windows
 {: .note }
 You can also run in development mode/debug mode using `--dev` in the command
 
-You can access it at `https://your-domain:port/uri-prefix-if-set/`
+You can access it at `http://your-domain:port/uri-prefix-if-set/` (or `https://` if SSL is configured)
 
 ## Management Commands
 

@@ -10,14 +10,25 @@ SSL certificates are **required** for production use of Parley Chat. HTTP is uns
 
 ## Quick Setup
 
+### Self-Signed SSL Certificate (Development Only)
+
+For development and testing purposes, you can generate self-signed SSL certificates:
+
+```sh
+python3.13 self_ssl.py
+```
+
+{: .note }
+Replace python3.13 with python if you're on Windows
+
+{: .warning }
+Self-signed certificates will only work with the frontend hosted by the backend itself and should not be used in production.
+
 ### Manual Certificate Setup
 
 Obtain certificates using Let's Encrypt or your certificate provider and place them in the `certs` directory:
 - `cert.pem` - Your SSL certificate
 - `key.pem` - Your private key
-
-{: .note }
-Self-signed certificates will only work with the frontend hosted by the backend itself.
 
 ## Automatic SSL Certificate Management with Certbot
 
