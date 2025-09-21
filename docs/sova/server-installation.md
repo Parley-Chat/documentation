@@ -36,7 +36,7 @@ cd Parley-Chat
 On Ubuntu:
 
 ```sh
-curl -sSL https://get.docker.com/ | CHANNEL=stable bash
+curl -sSL https://get.docker.com/ | bash
 ```
 
 {: .note }
