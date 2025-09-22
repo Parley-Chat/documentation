@@ -32,6 +32,14 @@ cd Parley-Chat
 git clone https://github.com/Parley-Chat/Sova
 ```
 
+### (Optional but recommended) Clone the Mura (Frontend) Repository
+
+To also host the Frontend with the Backend clone the Mura (Frontend) Repository:
+
+```sh
+git clone https://github.com/Parley-Chat/Mura
+```
+
 ### 4. Navigate to Sova (Backend) Directory
 
 ```sh

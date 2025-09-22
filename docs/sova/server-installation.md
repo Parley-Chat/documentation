@@ -48,6 +48,17 @@ In restricted networks, use http_proxy and https_proxy environment variables to 
 git clone https://github.com/Parley-Chat/Sova
 ```
 
+{: .note }
+If `git` is not found, Install git on Ubuntu using: `apt install git`
+
+### (Optional but recommended) Clone the Mura (Frontend) Repository
+
+To also host the Frontend with the Backend clone the Mura (Frontend) Repository:
+
+```sh
+git clone https://github.com/Parley-Chat/Mura
+```
+
 ### 5. Navigate to Sova (Backend) Directory
 
 ```sh
