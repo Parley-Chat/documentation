@@ -40,7 +40,7 @@ curl -sSL https://get.docker.com/ | bash
 ```
 
 {: .note }
-In restricted networks, use http_proxy and https_proxy environment variables to install docker
+In restricted networks, use http_proxy and https_proxy environment variables to install Docker
 
 ### 4. Clone the Repository
 
@@ -76,16 +76,19 @@ Run Parley Chat backend to create a config file:
 docker compose run --build --rm app
 ```
 
-### 8. Configure the Backend
+### 8. Configuration
 
-Open `config.toml` with an editor to configure the Backend:
+Open `config.toml` with an editor:
 
 ```sh
 nano config.toml
 ```
 
-{: .note }
-Some changes may require you to edit `docker-compose.yml` and `nginx.conf` too, like changing webserver port and URI Prefix
+{: .important }
+When using Docker to run Parley chat server, don't change the port in config.toml, instead, edit docker-compose.yml and change the port where there is a comment that says `To change the port, change the first part of the port before :`
+
+{: .important }
+It's highly recommended that you change the port in environments where internet censorship exists
 
 ### 9. SSL Certificates
 
