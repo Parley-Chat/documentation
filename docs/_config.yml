@@ -13,6 +13,15 @@ callouts:
   note:
     title: Note
     color: blue
+  warning:
+    title: Warning
+    color: yellow
+  caution:
+    title: Caution
+    color: red
+  important:
+    title: Important
+    color: purple
 
 defaults:
   - scope:
