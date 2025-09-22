@@ -2,7 +2,7 @@ title: Parley Chat Docs
 description: Documentation for Parley.
 
 url: "https://docs.parley-chat.site"
-baseurl: "/documentation"
+baseurl: "/"
 permalink: pretty
 
 theme: just-the-docs
