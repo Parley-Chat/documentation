@@ -58,7 +58,6 @@ sudo certbot certonly --standalone -d your-domain.com
 ```sh
 sudo cp /etc/letsencrypt/live/your-domain.com/fullchain.pem certs/cert.pem
 sudo cp /etc/letsencrypt/live/your-domain.com/privkey.pem certs/key.pem
-sudo chown $USER:$USER certs/*.pem
 ```
 
 ### Automatic Renewal Setup
@@ -110,22 +109,6 @@ sudo certbot certificates
 - Stop all services using these ports before running certbot
 - Use `sudo netstat -tlnp | grep :80` to find processes using port 80
 
-**Permission issues:**
-- Ensure the `certs` directory exists and has correct permissions
-- Use `sudo chown $USER:$USER certs/*.pem` after copying certificates
-
 **Domain validation fails:**
 - Ensure your domain points to the server's IP address
 - Check firewall settings allow traffic on port 80
-
-### Alternative Methods
-
-**Using webroot method (if you have a running web server):**
-```sh
-sudo certbot certonly --webroot -w /var/www/html -d your-domain.com
-```
-
-**Using nginx plugin:**
-```sh
-sudo certbot --nginx -d your-domain.com
-```
