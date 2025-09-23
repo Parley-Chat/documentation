@@ -96,7 +96,7 @@ nano config.toml
 ```
 
 {: .important }
-When using Docker to run Parley chat server, don't change the port in config.toml, instead, edit `docker-compose.yml` and change the port where there is a comment that says `To change the port, change the first part of the port before :`
+When using Docker to run Parley chat server, don't change the port in config.toml, instead, create a .env file with content like this `PORT=YOUR PORT` (replace `YOUR PORT` with your port)
 
 {: .note }
 If you have set a URI Prefix, you have to also set it in the `docker-compose.yml` file health check URL for health check to work properly

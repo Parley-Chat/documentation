@@ -64,20 +64,31 @@ sudo chown $USER:$USER certs/*.pem
 ### Automatic Renewal Setup
 
 **Set up automatic renewal:**
+
 ```sh
 sudo crontab -e
 ```
 
-Add this line to check for renewal twice daily:
-```
-0 12,0 * * * certbot renew --quiet --deploy-hook "cp /etc/letsencrypt/live/your-domain.com/fullchain.pem /path/to/Parley-Chat/Backend/certs/cert.pem && cp /etc/letsencrypt/live/your-domain.com/privkey.pem /path/to/Parley-Chat/Backend/certs/key.pem && chown $USER:$USER /path/to/Parley-Chat/Backend/certs/*.pem && cd /path/to/Parley-Chat/Backend && docker compose restart nginx"
+Add this line to check for renewal twice daily (midnight and noon):
+
+```cron
+0 0,12 * * * /usr/bin/certbot renew --quiet \
+  --pre-hook "/usr/bin/docker compose -f /path/to/Parley-Chat/Sova/docker-compose.yml stop nginx" \
+  --post-hook "/usr/bin/docker compose -f /path/to/Parley-Chat/Sova/docker-compose.yml start nginx" \
+  --deploy-hook "cp /etc/letsencrypt/live/your-domain.com/fullchain.pem /path/to/Parley-Chat/Sova/certs/cert.pem && \
+                 cp /etc/letsencrypt/live/your-domain.com/privkey.pem /path/to/Parley-Chat/Sova/certs/key.pem && \
+                 chown appuser:appuser /path/to/Parley-Chat/Sova/certs/*.pem && \
+                 /usr/bin/docker compose -f /path/to/Parley-Chat/Sova/docker-compose.yml exec -T nginx nginx -s reload"
 ```
 
 {: .note }
-The `certbot renew` command only attempts renewal when certificates are within 30 days of expiration, so running it frequently doesn't hit Let's Encrypt's rate limits.
+Replace `/path/to/Parley-Chat/Sova` with your actual installation path.
 
 {: .note }
-Replace `/path/to/Parley-Chat/Backend` with your actual installation path. The deploy-hook ensures certificates are copied and nginx is restarted when renewed.
+The `pre-hook` and `post-hook` temporarily stop nginx so Certbot in **standalone mode** can bind to port 80 for domain validation. If you switch to `webroot` mode later, you can drop these two hooks and avoid downtime entirely.
+
+{: .note }
+`certbot renew` only renews certificates that are within 30 days of expiration, so running it twice a day is safe and avoids hitting Let's Encrypt rate limits.
 
 ### Verification
 
