@@ -29,7 +29,7 @@ td {
 }
 
 /* Callouts */
-p.note, blockquote.note {
+p.note, blockquote.note, p.warning, blockquote.warning, p.caution, blockquote.caution, p.important, blockquote.important {
   width: fit-content;
   max-width: 100%;
 }
