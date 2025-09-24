@@ -7,6 +7,9 @@ nav_order: 1
 
 Welcome to the Parley Chat documentation. Parley Chat is a modern chat application with a focus on privacy and performance.
 
+{: .tip }
+Looking for Enterprise Support? [Speak with Us Today!](mailto:support@parley-chat.site)\n\nGet Enterprise Support and custom features, including customized login, branding and more!
+
 ## Quick Navigation
 
 ### [Sova (Backend)](sova/)
