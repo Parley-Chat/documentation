@@ -8,8 +8,8 @@ nav_order: 1
 Welcome to the Parley Chat documentation. Parley Chat is a modern chat application with a focus on privacy and performance.
 
 <p class="tip">
-  Looking for Enterprise Support? [Speak with Us Today!](mailto:support@parley-chat.site)
-
+  Looking for Enterprise Support? <a href="mailto:support@parley-chat.site">Speak with Us Today!</a><br>
+<br>
   Get Enterprise Support and custom features, including customized login, branding and more!
 </p>
 
