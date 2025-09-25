@@ -75,9 +75,7 @@ Add this line to check for renewal twice daily (midnight and noon):
   --pre-hook "/usr/bin/docker compose -f /path/to/Parley-Chat/Sova/docker-compose.yml stop nginx" \
   --post-hook "/usr/bin/docker compose -f /path/to/Parley-Chat/Sova/docker-compose.yml start nginx" \
   --deploy-hook "cp /etc/letsencrypt/live/your-domain.com/fullchain.pem /path/to/Parley-Chat/Sova/certs/cert.pem && \
-                 cp /etc/letsencrypt/live/your-domain.com/privkey.pem /path/to/Parley-Chat/Sova/certs/key.pem && \
-                 chown appuser:appuser /path/to/Parley-Chat/Sova/certs/*.pem && \
-                 /usr/bin/docker compose -f /path/to/Parley-Chat/Sova/docker-compose.yml exec -T nginx nginx -s reload"
+                 cp /etc/letsencrypt/live/your-domain.com/privkey.pem /path/to/Parley-Chat/Sova/certs/key.pem
 ```
 
 {: .note }
