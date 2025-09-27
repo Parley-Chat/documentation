@@ -63,7 +63,7 @@ python3.13 main.py
 ```
 
 {: .note }
-Replace python3.13 with python if you're on Windows
+Replace `python3.13` with `python` if you're on Windows
 
 ### 8. Configure the Backend
 
@@ -84,7 +84,7 @@ python3.13 main.py
 ```
 
 {: .note }
-Replace python3.13 with python if you're on Windows
+Replace `python3.13` with `python` if you're on Windows
 
 {: .note }
 You can also run in development mode/debug mode using `--dev` in the command

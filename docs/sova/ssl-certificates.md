@@ -19,7 +19,7 @@ python3.13 self_ssl.py
 ```
 
 {: .note }
-Replace python3.13 with python if you're on Windows
+Replace `python3.13` with `python` if you're on Windows
 
 {: .warning }
 Self-signed certificates will only work with the frontend hosted by the backend itself and should not be used in production.
