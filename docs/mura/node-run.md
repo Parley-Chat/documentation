@@ -12,7 +12,7 @@ How to run Mura frontend locally using node.js
 
 If alredy installed this section can be ignored, elsewise follow the instructions in this section.
 
-1. Go to https://nodejs.org/en/download
+1. Go to [https://nodejs.org/en/download](https://nodejs.org/en/download)
 2. Download and setup node.js
 
 {: .warning }
@@ -23,7 +23,7 @@ If npm is on the path but not node or node is several versions behind:
 1. Install n globally `npm install -g n`
 2. Upgrade node to latest `n latest`
 
-## Cloning the reposytorie
+## Cloning the repository
 
 Go to a folder where you want the frontend folder to be and run:
 ```bash
