@@ -25,12 +25,13 @@ If npm is on the path but not node or node is several versions behind: install n
 
 Go to a folder where you want the frontend folder to be and run:
 ```bash
-git clone https://github.com/parley-chat/mura.git
+git clone https://github.com/parley-chat/Mura.git
+cd Mura
 ```
 
 ## Running locally
 
-Go to the frontend repo and run
+Once the frontend folder is there you just need to run this:
 ```bash
 npm i express open
 node quickrun.js
