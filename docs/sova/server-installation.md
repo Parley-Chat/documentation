@@ -19,22 +19,16 @@ For development installation, use [Development Installation](development-install
 
 ## Installation Steps
 
-### 1. Create a directory for Parley Chat
+1\. Create a directory for Parley Chat and navigate to it
 
 ```sh
 mkdir Parley-Chat
-```
-
-### 2. Navigate to Parley Chat directory
-
-```sh
 cd Parley-Chat
 ```
 
-### 3. Install Docker
+2\. Install Docker
 
-On Ubuntu:
-
+**Linux:**
 ```sh
 curl -sSL https://get.docker.com/ | bash
 ```
@@ -42,34 +36,33 @@ curl -sSL https://get.docker.com/ | bash
 {: .note }
 In restricted networks, use http_proxy and https_proxy environment variables to install Docker
 
-### 4. Clone the Repository
+3\. Clone the Repository
 
 ```sh
-git clone https://github.com/Parley-Chat/Sova
+git clone https://github.com/Parley-Chat/Sova.git
 ```
 
 {: .note }
 If `git` is not found, Install git on Ubuntu using: `apt install git`
 
-### (Optional but recommended) Clone the Mura (Frontend) Repository
+4\. (Optional but recommended) Clone the Mura (Frontend) Repository
 
 To also host the Frontend with the Backend clone the Mura (Frontend) Repository:
-
 ```sh
-git clone https://github.com/Parley-Chat/Mura
+git clone https://github.com/Parley-Chat/Mura.git
 ```
 
-### 5. Navigate to Sova (Backend) Directory
+5\. Navigate to Sova (Backend) Directory
 
 ```sh
 cd Sova
 ```
 
-### 6. Create Configuration File
+6\. Create Configuration File
 
 Create an empty `config.toml` file (required for Docker to mount it as a file):
 
-**Ubuntu:**
+**Linux:**
 ```sh
 touch config.toml
 ```
@@ -79,23 +72,28 @@ touch config.toml
 type nul > config.toml
 ```
 
-### 7. Generate Configuration
+7\. Generate Configuration
 
 Run Parley Chat backend to create a config file:
-
 ```sh
 docker compose run --build --rm app
 ```
 
-### 8. Configuration
+8\. Configuration
 
-Open `config.toml` with an editor:
+Open `config.toml` with a text editor:
 
+**Linux:**
 ```sh
 nano config.toml
 ```
 
-{: .important }
+**Windows:**
+```sh
+notepad config.toml
+```
+
+{: .warning }
 When using Docker to run Parley chat server, don't change the port in config.toml, instead, create a .env file with content like this `PORT=YOUR PORT` (replace `YOUR PORT` with your port)
 
 {: .note }
@@ -104,10 +102,10 @@ If you have set a URI Prefix, you have to also set it in the `docker-compose.yml
 {: .important }
 It's highly recommended that you change the port in environments where internet censorship exists
 
-### 9. SSL Certificates
+9\. SSL Certificates
 
 {: .note }
-SSL certificates are **required** for production use. HTTP is unsupported due to WebCrypto API requirements.
+SSL certificates are **required** for production use. HTTP is unsupported due to WebCrypto API requirements. (localhost will still work normally on http)
 
 Place your SSL certificates in the `certs` directory:
 - `cert.pem` - Your SSL certificate
@@ -115,7 +113,7 @@ Place your SSL certificates in the `certs` directory:
 
 For detailed instructions on obtaining and configuring SSL certificates, including automatic setup with Let's Encrypt and certbot, see [SSL Certificates](ssl-certificates.md).
 
-### 10. Deploy
+10\. Deploy
 
 Start the services:
 
@@ -128,6 +126,7 @@ Wait for the build to complete. You can access it at `https://your-domain:port/u
 ## Management Commands
 
 ### Update
+
 To update the installation:
 ```sh
 git pull
@@ -135,12 +134,14 @@ docker compose up -d --build
 ```
 
 ### Shutdown
+
 To shut down all services:
 ```sh
 docker compose down
 ```
 
 ### Start (without rebuilding)
+
 To start without rebuilding/updating:
 ```sh
 docker compose up -d

@@ -19,9 +19,7 @@ If alredy installed this section can be ignored, elsewise follow the instruction
 In some systems, specially Linux, using a terminal based installation is prefered
 
 {: .note }
-If npm is on the path but not node or node is several versions behind:
-1. Install n globally `npm install -g n`
-2. Upgrade node to latest `n latest`
+If npm is on the path but not node or node is several versions behind: install n globally `npm install -g n` and upgrade to node latest `n latest`
 
 ## Cloning the repository
 

@@ -14,68 +14,66 @@ First, install Python using [Python Installation](python-installation.md)
 
 ## Installation Steps
 
-### 1. Create a directory for Parley Chat
+1\. Create a directory for Parley Chat and navigate to it
 
 ```sh
 mkdir Parley-Chat
-```
-
-### 2. Navigate to Parley Chat directory
-
-```sh
 cd Parley-Chat
 ```
 
-### 3. Clone the Repository
+2\. Clone the Repository
 
 ```sh
-git clone https://github.com/Parley-Chat/Sova
+git clone https://github.com/Parley-Chat/Sova.git
 ```
 
-### (Optional but recommended) Clone the Mura (Frontend) Repository
+3\. (Optional but recommended) Clone the Mura (Frontend) Repository
 
 To also host the Frontend with the Backend clone the Mura (Frontend) Repository:
-
 ```sh
-git clone https://github.com/Parley-Chat/Mura
+git clone https://github.com/Parley-Chat/Mura.git
 ```
 
-### 4. Navigate to Sova (Backend) Directory
+4\. Navigate to Sova (Backend) Directory
 
 ```sh
 cd Sova
 ```
 
-### 5. Install Dependencies
+5\. Install Dependencies
 
 Install the required Python packages:
-
 ```sh
 pip install -r requirements.txt
 ```
 
-### 7. Generate Configuration File
+6\. Generate Configuration File
 
 Run Parley Chat backend to create a config file:
-
 ```sh
 python3.13 main.py
 ```
 
 {: .note }
-Replace `python3.13` with `python` if you're on Windows
+Replace `python3.13` with `python` on Windows
 
-### 8. Configure the Backend
+7\. Configure the Backend
 
-Open `config.toml` with an editor to configure the Backend:
+Open `config.toml` with a text editor to configure the Backend:
 
+**Linux:**
 ```sh
 nano config.toml
 ```
 
+**Windows:**
+```sh
+notepad config.toml
+```
+
 You can configure the Backend to run in debug mode using `dev=true` in the config file.
 
-### 9. Start the Server
+8\. Start the Server
 
 Run the following command to start the server:
 
@@ -103,4 +101,4 @@ To update the installation:
 git pull
 ```
 
-Then run it again using the start command from step 9.
+Then run it again using the start command from step 8.

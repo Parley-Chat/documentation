@@ -13,14 +13,13 @@ Parley Chat requires Python 3.13 for optimal performance and compatibility.
 1. Download Python 3.13 from [python.org](https://python.org)
 2. **Important**: Check "Add to PATH" during installation to avoid issues later
 3. Verify installation by opening Command Prompt and running:
-   ```cmd
-   python --version
-   ```
+```bash
+python --version
+```
 
 ## Ubuntu Installation
 
 Run the following commands to install Python 3.13 and dependencies:
-
 ```sh
 apt-get update && \
 apt-get install -y software-properties-common curl && \
