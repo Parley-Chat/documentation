@@ -33,7 +33,7 @@ cd Mura
 
 Once the frontend folder is there you just need to run this:
 ```bash
-npm i express open
+npm i express open cors
 node quickrun.js
 ```
 
