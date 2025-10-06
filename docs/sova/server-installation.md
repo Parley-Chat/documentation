@@ -76,7 +76,7 @@ type nul > config.toml
 
 Run Parley Chat backend to create a config file:
 ```sh
-docker compose run --build --rm app
+docker compose run --build --rm sova
 ```
 
 **8. Configuration**
