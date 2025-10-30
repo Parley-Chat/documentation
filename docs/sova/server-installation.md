@@ -146,3 +146,10 @@ To start without rebuilding/updating:
 ```sh
 docker compose up -d
 ```
+
+### CLI
+
+To use it:
+```sh
+docker compose run --rm sova python cli.py
+```
