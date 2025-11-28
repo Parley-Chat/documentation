@@ -31,6 +31,19 @@ Complete backend setup and development documentation:
 - [Development Installation](sova/development-installation.md) - Set up development environment
 - [SSL Certificates](sova/ssl-certificates.md) - SSL setup with automatic renewal
 
+### Sova/Mura version table
+
+| Sova           | Mura          |
+| -------------- | ------------- |
+| 0.5.1          | 0.5.1         |
+| 0.5.0          | 0.5.0         |
+| 0.4.0          | 0.4.0 - 0.5.0 |
+| 0.3.0 - 0.3.3  | 0.3.0 - 0.5.0 |
+| 0.2.2 - 0.2.11 | 0.2.2 - 0.5.0 |
+| 0.2.0 - 0.2.1  | 0.2.0 - 0.5.0 |
+| 0.1.6 - 0.1.7  | 0.1.5         |
+| 0.1.0 - 0.1.5  | 0.1.0 - 0.1.4 |
+
 ## Project Links
 
 - [GitHub Organization](https://github.com/Parley-Chat)
