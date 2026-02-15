@@ -32,7 +32,7 @@ Client                     Server
 ## Messages
 
 Users' key pairs are used for asymmetric encryption to exchange an ephemeral shared key (supported: [AES-GCM](#aes-gcm)) which is then used for symmetric encryption of messages.\
-Shared keys SHOULD expire after one hour and MUST expire after one day to provide forward secrecy. This limits the impact of key compromise to a limited time window.\
+Shared keys MUST expire after one hour to provide forward secrecy. This limits the impact of key compromise to a limited time window.\
 If the shared key has expired, the next user to send a message MUST generate a new shared key. The key is then encrypted using each member's public key and each encrypted version is sent to the server.\
 Messages are additionally signed with the user's private key using [RSA-PSS](#rsa-pss) (signature format: `${message_content}:${channel_id}:${unix_s}`).
 
