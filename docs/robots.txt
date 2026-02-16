@@ -1,0 +1,5 @@
+user-agent: *
+sitemap: https://docs.parley-chat.site/sitemap.xml
+allow: /
+allow: /sitemap.xml
+allow: /sitemap-docs.xml
