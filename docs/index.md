@@ -23,6 +23,15 @@ Frontend running:
 - [Node Run](mura/node-run.md) - Run locally via node.js
 - [GitHub Pages](mura/github-pages.md) - Host for free using GitHub Pages
 
+### [Installer](installer/index.md)
+
+The recommended way to deploy Parley Chat on a Linux server — sets up Sova, Mura, nginx, and SSL in one step:
+- [Installation](installer/installation.md) - interactive install walkthrough
+- [Local Installation](installer/local-installation.md) - install without internet access
+- [Auto-Update](installer/auto-update.md) - keep Parley Chat updated automatically
+- [Modify & Renew Certificates](installer/modify.md) - post-install configuration changes
+- [Custom Mirror](installer/custom-mirror.md) - use an alternative download mirror
+
 ### [Sova (Backend)](sova/index.md)
 
 Complete backend setup and development documentation:
