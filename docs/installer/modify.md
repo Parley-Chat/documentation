@@ -48,6 +48,7 @@ This option is only available when nginx is in use. If you chose **no nginx** du
 | Self-signed | Internal servers, or when Let's Encrypt is unavailable |
 | Let's Encrypt HTTP | Public server with port 80 open — auto-renews via cron |
 | Let's Encrypt DNS | Server behind a firewall — requires DNS TXT record |
+| Use existing certificates | You already have a certificate and key in PEM format; provide the file paths |
 
 {: .warning }
 Let's Encrypt DNS certificates require manual renewal every 90 days. Run `certbot renew --manual --preferred-challenges dns` and then `systemctl restart parley-chat-nginx`.

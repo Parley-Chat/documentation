@@ -59,6 +59,7 @@ SSL Certificate:
 [1] Self-signed (works everywhere, browser warning on first visit)
 [2] Let's Encrypt - HTTP verification (port 80 must be open from internet, auto-renews)
 [3] Let's Encrypt - DNS verification (works behind firewall, requires adding a DNS TXT record)
+[4] Use existing certificates (provide paths)
 ```
 
 | Option | Use when |
@@ -66,6 +67,7 @@ SSL Certificate:
 | Self-signed | Internal/private servers, or when you don't mind the browser warning |
 | Let's Encrypt HTTP | Public server with port 80 open — simplest option, auto-renews via cron |
 | Let's Encrypt DNS | Server behind a firewall or NAT — requires adding a TXT record to your DNS |
+| Use existing certificates | You already have a certificate and key in PEM format; provide the file paths |
 
 {: .note }
 Let's Encrypt HTTP adds a cron job to renew the certificate every 12 hours automatically.
