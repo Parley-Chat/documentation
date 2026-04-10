@@ -17,20 +17,20 @@ Welcome to the Parley Chat documentation. Parley Chat is a modern secure e2ee ch
 
 ### [Protocol](protocol/index.md)
 
+Information on how the protocol works.
+
+### [Installer (External docs)](https://github.com/parley-Chat/installer)
+
+The recommended way to deploy Parley Chat on a Linux server. Sets up Sova, Mura, nginx, and SSL in one step.
+
 ### [Mura (Frontend)](mura/index.md)
 
-Frontend running:
+Local use:
 - [Node Run](mura/node-run.md) - Run locally via node.js
 - [GitHub Pages](mura/github-pages.md) - Host for free using GitHub Pages
 
-### [Installer](installer/index.md)
-
-The recommended way to deploy Parley Chat on a Linux server — sets up Sova, Mura, nginx, and SSL in one step:
-- [Installation](installer/installation.md) - interactive install walkthrough
-- [Local Installation](installer/local-installation.md) - install without internet access
-- [Auto-Update](installer/auto-update.md) - keep Parley Chat updated automatically
-- [Modify & Renew Certificates](installer/modify.md) - post-install configuration changes
-- [Custom Mirror](installer/custom-mirror.md) - use an alternative download mirror
+Modifications:
+- [Languages](mura/languages.md) - How to add more languages
 
 ### [Sova (Backend)](sova/index.md)
 
@@ -44,7 +44,7 @@ Complete backend setup and development documentation:
 
 | Sova           | Mura          |
 | -------------- | ------------- |
-| 0.6.0          | 0.6.0         |
+| 0.6.0 - 0.6.1  | 0.6.0 - 0.6.2 |
 | 0.5.2          | 0.5.2         |
 | 0.5.1          | 0.5.1         |
 | 0.5.0          | 0.5.0         |

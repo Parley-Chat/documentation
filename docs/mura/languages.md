@@ -12,6 +12,9 @@ Languages and translations can be found in `/media/langs`.
 
 Each language should be stored as a json file with the language's ISO code as name, for example: `es-ES.json` (For spanish `es`, Spain variation `-ES`).\
 
+{: .note }
+If you translate Parley to another language, feel free to contribute the translation upstream to allow more people to benefit from it.
+
 ## Configuration
 
 Saved in `/media/langs/script.js`.\
